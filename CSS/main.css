@@ -4,7 +4,7 @@
 body {
   width: 100%;
 }
-
+/* The header and all the goodies that go with it */
 .header {
   display: inline-block;
   width: 100%;
@@ -48,6 +48,8 @@ li {
   padding: 1em;
 }
 
+/* The content on the page starting above the fold */
+
 .jumbotron {
   display: inline-block;
   width: 100%;
@@ -67,6 +69,8 @@ h1 {
   display: inline-block;
   color: #02b3e4;
 }
+
+/* Below the fold */
 
 .Quote {
   background-color: #02b3e4;
@@ -91,6 +95,8 @@ h2 {
   vertical-align: middle;
 }
 
+/* Flexbox Content */
+
 .container {
   width: 100%;
   display: flex;
@@ -107,28 +113,6 @@ h2 {
 }
 
 
-/* Commenting out some stuff just in case.
-
-
-.sample:hover:before{
-  display: inline-block;
-}
-
-.sample:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: none;
-  z-index:0;
-}
-
-.one:before {
-  background-color: rgba(255,0,0,0.5);
-}
-*/
 .one {
   background-image: url("../img/pbmf.jpg");
   background-size: cover;
@@ -161,6 +145,8 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
 
 }
+
+/* Wrapping things up in the footer */
 
 footer {
   display: inline-block;
