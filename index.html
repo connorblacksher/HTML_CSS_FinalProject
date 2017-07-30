@@ -7,11 +7,12 @@
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     <style>
     @media screen and (min-width: 100px) and (max-width: 800px) {
       nav { display: none;}
     }
-    @media screen and (min-width: 770px) {
+    @media screen and (min-width: 800px) {
       .hamburger { display: none;}
     }
 
@@ -20,14 +21,15 @@
 
 <body>
 <!--Top Nav & Logo Stuff -->
+<div class="wrapper">
 <header class ="header">
   <div class ="header-inner">
     <img class="header-logo" src="img/udacity.svg" alt="Udacity Logo">
       <nav>
         <ul>
-          <li> Work </li>
-          <li> About </li>
           <li> Contact </li>
+          <li> About </li>
+          <li> Work </li>
         </ul>
       </nav>
       <a class="hamburger" href=""> HAMBURGER </a>
@@ -40,37 +42,37 @@
   <section class="jumbotron">
     <h1> Best freaking Front End ever! </h1>
   </section>
+  <!--Section to break up the pacing -->
+  <section class="Quote">
+    <div class="WebPlace">
+      <h2> Making the web a better place. </h2>
+      <p>                </p>
+    </div>
+  </section>
   <!--Section with project samples -->
-  <section class="more-work">
-  <a> <div class="project-sample1">
+  <section class="container">
+  <div class="project sample one">
       <h3> Project Title </h3>
       <p> A snippet of project details for the project </p>
     </div>
-  </a>
+
     <!--Sample Project -->
-    <div class="project-sample2">
+    <div class="project sample two">
       <h3> Project Title </h3>
       <p> A snippet of project details for the project </p>
     </div>
     <!--Sample Project -->
-    <div class="project-sample3">
+    <div class="project sample three">
       <h3> Project Title </h3>
       <p> A snippet of project details for the project </p>
     </div>
   </section>
+  </main>
 <!--Footer Section -->
 
   <footer>
+    <p> All rights reserved, basic footer stuff. </p>
 
   </footer>
-
-
-
-
-
-
-
-
-
-
+</div>
 </body>
