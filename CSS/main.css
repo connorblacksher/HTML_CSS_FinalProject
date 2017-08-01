@@ -39,11 +39,11 @@ nav {
    display: flex;
    flex-flow: row;
    -webkit-flex-flow: row wrap;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'source sans pro', sans-serif;
 }
 
 @media screen and (min-width: 100px) and (max-width: 800px) {
-  nav { display: none;}
+  nav a {flex-direction: row;}
 }
 
 
@@ -56,17 +56,19 @@ ul {
 
 nav a {
   text-decoration: none;
-  padding: 3em;
+  padding: 45px;
   text-transform: uppercase;
   color: white;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
+  line-height: 4em;
 }
 
 
+/* I think the hamburger might be too much for me at this point.
 .hamburger {
   padding-right: 20px;
 }
-
+*/
 
 span {
   display: block;
@@ -80,10 +82,10 @@ span {
 }
 
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .hamburger { display: none;}
 }
-
+*/
 /* The content on the page starting above the fold */
 
 .jumbotron {
@@ -102,7 +104,7 @@ h1 {
   text-align: center;
   padding: 1em;
   vertical-align: middle;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'source sans pro', sans-serif;
   font-size: 56px;
   color: #02b3e4;
 }
@@ -129,7 +131,7 @@ h1 {
 
 h2 {
   font-size: 36px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'source sans pro', sans-serif;
   color: white;
   width: 100%;
   vertical-align: middle;
@@ -178,28 +180,42 @@ h3 {
   padding: 1em;
   font-size:48px;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'source sans pro', sans-serif;
   color: white;
 }
 
 
 p {
   color: white;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'source sans pro', sans-serif;
 }
 
 
 /* Wrapping things up in the footer */
 footer {
   display: flex;
+  flex-direction: row;
   width: 100%;
   min-height: 100px;
   background-color: #7d97ad;
 }
 
+.fa-twitter{
+  color:white;
+  align-self: center;
+  padding: 15px;
+}
+
+.fa-facebook{
+  color:white;
+  align-self: center;
+  padding: 15px;
+}
 
 footer p {
   float: left;
-  padding: 1em;
+  padding: 2em;
   color: white;
+  justify-content: center;
+  font-family: 'source sans pro', sans-serif;
 }
