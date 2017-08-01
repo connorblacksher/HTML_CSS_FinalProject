@@ -1,12 +1,19 @@
-.wrapper {
-
-}
-body {
+html{
   width: 100%;
+  height: 100%;
+  margin: 0;
 }
+
+body {
+  margin: 0;
+}
+
 /* The header and all the goodies that go with it */
 .header {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   background-color: #0093E9;
   background-image: linear-gradient(45deg, #02b3e4 0%, #7d97ad 100%);
@@ -15,50 +22,81 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 .header-logo {
+  flex-direction: row;
   padding:2em;
   width: 20%;
   max-width: 100px;
-  display: inline-block;
   align-content: center;
 }
 
+
 nav {
-  padding-right: 20px;
-  width: 74%;
-  display:inline-block;
-  float:right;
+  list-style: none;
+   margin: 0;
+   padding-right: 30px;
+   display: flex;
+   flex-flow: row;
+   -webkit-flex-flow: row wrap;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-li {
-  display:inline-block;
+@media screen and (min-width: 100px) and (max-width: 800px) {
+  nav { display: none;}
+}
+
+
+ul {
+  list-style: none;
+  line-height: 45px;
+  height: auto;
+}
+
+
+nav a {
+  text-decoration: none;
   padding: 3em;
-  float:right;
   text-transform: uppercase;
   color: white;
   letter-spacing: 5px;
 }
 
+
 .hamburger {
-  vertical-align: top;
-  display: inline-block;
-  background-color: #ffffff;
-  float: right;
-  padding: 1em;
+  padding-right: 20px;
+}
+
+
+span {
+  display: block;
+  align-self: auto;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+
+@media screen and (min-width: 800px) {
+  .hamburger { display: none;}
 }
 
 /* The content on the page starting above the fold */
 
 .jumbotron {
-  display: inline-block;
+  display: flex;
   width: 100%;
   height: 100vh;
-  background-image: url("../img/mountains.jpg");
+  background-image: url(../img/mountains.jpg);
   background-size: cover;
   text-align: center;
-
+  align-items: center;
+  justify-content: center;
 }
+
 
 h1 {
   text-align: center;
@@ -66,30 +104,32 @@ h1 {
   vertical-align: middle;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 56px;
-  display: inline-block;
   color: #02b3e4;
 }
 
 /* Below the fold */
 
-.Quote {
+.quote {
   background-color: #02b3e4;
   width: 100%;
   text-align: center;
   height: 200px;
 }
 
-.WebPlace {
-  display: inline-block;
+
+.webplace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   vertical-align: middle;
   padding-top: 45px;
   width:100%;
 }
 
+
 h2 {
   font-size: 36px;
   font-family: 'Source Sans Pro', sans-serif;
-  display: inline-block;
   color: white;
   width: 100%;
   vertical-align: middle;
@@ -101,35 +141,38 @@ h2 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-
 }
+
 
 .project {
   display: inline-block;
   min-height: 400px;
   text-align: center;
   flex: auto;
-  width:auto%;
+  width:auto;
 }
 
 
 .one {
-  background-image: url("../img/pbmf.jpg");
+  background-image: url(../img/pbmf.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 .two {
-  background-image: url("../img/hearthop.jpg");
+  background-image: url(../img/hearthop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+
 .three {
-  background-image: url("../img/dougspong.jpg");
+  background-image: url(../img/dougspong.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 h3 {
   padding: 1em;
@@ -137,23 +180,23 @@ h3 {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
-  text-shadow: 2px, 2px, 2px;
 }
+
 
 p {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
-
 }
 
-/* Wrapping things up in the footer */
 
+/* Wrapping things up in the footer */
 footer {
-  display: inline-block;
+  display: flex;
   width: 100%;
   min-height: 100px;
   background-color: #7d97ad;
 }
+
 
 footer p {
   float: left;
