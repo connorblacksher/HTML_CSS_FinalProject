@@ -56,19 +56,13 @@ ul {
 
 nav a {
   text-decoration: none;
-  padding: 45px;
+  padding: 25px;
   text-transform: uppercase;
   color: white;
   letter-spacing: 10px;
   line-height: 4em;
 }
 
-
-/* I think the hamburger might be too much for me at this point.
-.hamburger {
-  padding-right: 20px;
-}
-*/
 
 span {
   display: block;
@@ -81,12 +75,6 @@ span {
   border-radius: 3px;
 }
 
-
-/* @media screen and (min-width: 800px) {
-  .hamburger { display: none;}
-}
-*/
-/* The content on the page starting above the fold */
 
 .jumbotron {
   display: flex;
